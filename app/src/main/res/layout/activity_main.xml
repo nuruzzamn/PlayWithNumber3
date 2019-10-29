@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/imagesguess"
+    tools:context="zaman.example.com.playwithnumber.MainActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="6dp"
+        android:background="#824CA7"
+        android:gravity="center"
+        android:text="Hello,i am thinking a number between 1 to 25 !!"
+        android:textColor="#F4F3F4"
+        android:textSize="19dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.159"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.174" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView2"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="14dp"
+        android:text="CAN YOU GUESS IT ??"
+        android:textColor="#F5E356"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="76dp"
+        tools:layout_editor_absoluteY="143dp" />
+
+    <EditText
+        android:id="@+id/numberId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="57dp"
+        android:background="#F4F3F4"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter a number between 1 to 25!"
+        android:inputType="number"
+        android:padding="5dp"
+        android:textColor="#824CA7"
+        android:textColorHighlight="#F52549"
+        android:textColorHint="#824CA7"
+        android:textSize="21dp"
+        android:textStyle="italic"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="195dp" />
+
+    <Button
+        android:id="@+id/buttonId"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+
+        android:layout_below="@+id/numberId"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/pillbutton"
+        android:onClick="buttonClick"
+        android:text="GUESS "
+        android:textColor="#EC96A4"
+        android:textSize="34dp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="48dp"
+        tools:layout_editor_absoluteY="249dp" />
+
+    <Button
+        android:id="@+id/buttonId2"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+
+        android:layout_below="@+id/buttonId"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="42dp"
+        android:layout_marginRight="43dp"
+        android:background="@drawable/pastedimage"
+        android:onClick="againClick"
+        android:padding="5dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:text="Click here for start again"
+        android:textColor="#CB0000"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="75dp"
+        tools:layout_editor_absoluteY="315dp" />
+
+</RelativeLayout>
